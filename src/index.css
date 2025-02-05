@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --font-onest: "Onest", serif;
+
+    --bg-check: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjRkZGRkZGIj48cGF0aCBkPSJtMzgyLTM4OCAzMjEtMzIxcTE5LTE5IDQ1LTE5dDQ1IDE5cTE5IDE5IDE5IDQ1dC0xOSA0NUw0MjctMjUzcS0xOSAxOS00NSAxOXQtNDUtMTlMMTY3LTQyM3EtMTktMTktMTktNDV0MTktNDVxMTktMTkgNDUtMTl0NDUgMTlsMTI1IDEyNVoiLz48L3N2Zz4=");
+    --w-board: calc(100vw - 288px - (16px * 4) - 2px);
+    --w-board-full: calc(100vw - (16px * 4) - 2px);
+    --max-w-sidebar-mobile: calc(100vw - 32px);
+}
