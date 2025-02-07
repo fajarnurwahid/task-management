@@ -1,5 +1,6 @@
 import {
     RiAddLine,
+    RiArrowRightSLine,
     RiCalendarLine,
     RiDeleteBinLine,
     RiEditLine,
@@ -17,7 +18,7 @@ import { UserGroup, UserGroupImage } from "../../../components/UserGroup";
 import { Link } from "react-router";
 import { TabPane, TabPaneItem } from "../../../components/Tab";
 import Input from "../../../components/Input";
-import { TableTask, Td, Th, Tr } from "./components/TableTask";
+import { TableTask, Td, TGroup, TGroupBody, TGroupTrigger, Th, Tr } from "./components/TableTask";
 import TaskBoard from "./components/TaskBoard";
 import { useDashboardLayoutContext } from "../../../layouts/dashboard/DashboardLayout";
 
@@ -134,8 +135,8 @@ export default function Task() {
                         <TableTask>
                             <Tr>
                                 <Th className="flex items-center space-x-2 w-72">
-                                    <Input type="checkbox" />
-                                    <span>Task</span>
+                                    <Input type="checkbox" className="shrink-0" />
+                                    <span className="truncate">Task</span>
                                 </Th>
                                 <Th className="w-64">Description</Th>
                                 <Th className="w-64">Assignee</Th>
@@ -147,8 +148,8 @@ export default function Task() {
                             </Tr>
                             <Tr>
                                 <Td className="flex items-center space-x-2 w-72">
-                                    <Input type="checkbox" />
-                                    <span>Task Name</span>
+                                    <Input type="checkbox" className="shrink-0" />
+                                    <span className="truncate">Task Name</span>
                                 </Td>
                                 <Td className="w-64">Description</Td>
                                 <Td className="w-64">Assignee</Td>
@@ -158,27 +159,54 @@ export default function Task() {
                                 <Td className="w-64">Due Date</Td>
                                 <Td className="w-64">Due Date</Td>
                             </Tr>
-                        </TableTask>
-                    </TaskBoard>
-                    <TaskBoard title="Pending">
-                        <TableTask>
-                            <Tr>
-                                <Th className="flex items-center space-x-2 w-72">
-                                    <Input type="checkbox" />
-                                    <span>Task</span>
-                                </Th>
-                                <Th className="w-64">Description</Th>
-                                <Th className="w-64">Assignee</Th>
-                                <Th className="w-64">Priority</Th>
-                                <Th className="w-64">Due Date</Th>
-                                <Th className="w-64">Due Date</Th>
-                                <Th className="w-64">Due Date</Th>
-                                <Th className="w-64">Due Date</Th>
-                            </Tr>
+                            <TGroup>
+                                <Tr>
+                                    <Td className="flex items-center space-x-2 w-72">
+                                        <TGroupTrigger />
+                                        <Input type="checkbox" className="shrink-0" />
+                                        <span className="truncate">Task Name</span>
+                                    </Td>
+                                    <Td className="w-64">Description</Td>
+                                    <Td className="w-64">Assignee</Td>
+                                    <Td className="w-64">Priority</Td>
+                                    <Td className="w-64">Due Date</Td>
+                                    <Td className="w-64">Due Date</Td>
+                                    <Td className="w-64">Due Date</Td>
+                                    <Td className="w-64">Due Date</Td>
+                                </Tr>
+                                <TGroupBody>
+                                    <Tr>
+                                        <Td className="flex items-center space-x-2 w-72">
+                                            <Input type="checkbox" className="shrink-0" />
+                                            <span className="truncate">Task Name</span>
+                                        </Td>
+                                        <Td className="w-64">Description</Td>
+                                        <Td className="w-64">Assignee</Td>
+                                        <Td className="w-64">Priority</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                    </Tr>
+                                    <Tr>
+                                        <Td className="flex items-center space-x-2 w-72">
+                                            <Input type="checkbox" className="shrink-0" />
+                                            <span className="truncate">Task Name</span>
+                                        </Td>
+                                        <Td className="w-64">Description</Td>
+                                        <Td className="w-64">Assignee</Td>
+                                        <Td className="w-64">Priority</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                    </Tr>
+                                </TGroupBody>
+                            </TGroup>
                             <Tr>
                                 <Td className="flex items-center space-x-2 w-72">
-                                    <Input type="checkbox" />
-                                    <span>Task Name</span>
+                                    <Input type="checkbox" className="shrink-0" />
+                                    <span className="truncate">Task Name</span>
                                 </Td>
                                 <Td className="w-64">Description</Td>
                                 <Td className="w-64">Assignee</Td>
@@ -188,6 +216,50 @@ export default function Task() {
                                 <Td className="w-64">Due Date</Td>
                                 <Td className="w-64">Due Date</Td>
                             </Tr>
+                            <TGroup open>
+                                <Tr>
+                                    <Td className="flex items-center space-x-2 w-72">
+                                        <TGroupTrigger />
+                                        <Input type="checkbox" className="shrink-0" />
+                                        <span className="truncate">Task Name</span>
+                                    </Td>
+                                    <Td className="w-64">Description</Td>
+                                    <Td className="w-64">Assignee</Td>
+                                    <Td className="w-64">Priority</Td>
+                                    <Td className="w-64">Due Date</Td>
+                                    <Td className="w-64">Due Date</Td>
+                                    <Td className="w-64">Due Date</Td>
+                                    <Td className="w-64">Due Date</Td>
+                                </Tr>
+                                <TGroupBody>
+                                    <Tr>
+                                        <Td className="flex items-center space-x-2 w-72">
+                                            <Input type="checkbox" className="shrink-0" />
+                                            <span className="truncate">Task Name</span>
+                                        </Td>
+                                        <Td className="w-64">Description</Td>
+                                        <Td className="w-64">Assignee</Td>
+                                        <Td className="w-64">Priority</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                    </Tr>
+                                    <Tr>
+                                        <Td className="flex items-center space-x-2 w-72">
+                                            <Input type="checkbox" className="shrink-0" />
+                                            <span className="truncate">Task Name</span>
+                                        </Td>
+                                        <Td className="w-64">Description</Td>
+                                        <Td className="w-64">Assignee</Td>
+                                        <Td className="w-64">Priority</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                        <Td className="w-64">Due Date</Td>
+                                    </Tr>
+                                </TGroupBody>
+                            </TGroup>
                         </TableTask>
                     </TaskBoard>
                 </div>
