@@ -1,6 +1,5 @@
 import {
     RiAddLine,
-    RiArrowRightSLine,
     RiCalendarLine,
     RiDeleteBinLine,
     RiEditLine,
