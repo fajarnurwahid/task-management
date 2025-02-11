@@ -20,6 +20,7 @@ import Input from "../../../components/Input";
 import { TableTask, Td, TGroup, TGroupBody, TGroupTrigger, Th, Tr } from "./components/TableTask";
 import TaskBoard from "./components/TaskBoard";
 import { useDashboardLayoutContext } from "../../../layouts/dashboard/DashboardLayout";
+import TaskDetailDialog from "./components/TaskDetailDialog";
 
 export default function Task() {
     const { setIsSidebarOpen } = useDashboardLayoutContext();
@@ -148,7 +149,7 @@ export default function Task() {
                             <Tr>
                                 <Td className="flex items-center space-x-2 w-72">
                                     <Input type="checkbox" className="shrink-0" />
-                                    <span className="truncate">Task Name</span>
+                                    <TaskDetailDialog>Task Name</TaskDetailDialog>
                                 </Td>
                                 <Td className="w-64">Description</Td>
                                 <Td className="w-64">Assignee</Td>
@@ -163,7 +164,7 @@ export default function Task() {
                                     <Td className="flex items-center space-x-2 w-72">
                                         <TGroupTrigger />
                                         <Input type="checkbox" className="shrink-0" />
-                                        <span className="truncate">Task Name</span>
+                                        <TaskDetailDialog>Task Name</TaskDetailDialog>
                                     </Td>
                                     <Td className="w-64">Description</Td>
                                     <Td className="w-64">Assignee</Td>
@@ -177,7 +178,7 @@ export default function Task() {
                                     <Tr>
                                         <Td className="flex items-center space-x-2 w-72">
                                             <Input type="checkbox" className="shrink-0" />
-                                            <span className="truncate">Task Name</span>
+                                            <TaskDetailDialog>Task Name</TaskDetailDialog>
                                         </Td>
                                         <Td className="w-64">Description</Td>
                                         <Td className="w-64">Assignee</Td>
@@ -190,7 +191,7 @@ export default function Task() {
                                     <Tr>
                                         <Td className="flex items-center space-x-2 w-72">
                                             <Input type="checkbox" className="shrink-0" />
-                                            <span className="truncate">Task Name</span>
+                                            <TaskDetailDialog>Task Name</TaskDetailDialog>
                                         </Td>
                                         <Td className="w-64">Description</Td>
                                         <Td className="w-64">Assignee</Td>
@@ -205,7 +206,7 @@ export default function Task() {
                             <Tr>
                                 <Td className="flex items-center space-x-2 w-72">
                                     <Input type="checkbox" className="shrink-0" />
-                                    <span className="truncate">Task Name</span>
+                                    <TaskDetailDialog>Task Name</TaskDetailDialog>
                                 </Td>
                                 <Td className="w-64">Description</Td>
                                 <Td className="w-64">Assignee</Td>
@@ -220,7 +221,7 @@ export default function Task() {
                                     <Td className="flex items-center space-x-2 w-72">
                                         <TGroupTrigger />
                                         <Input type="checkbox" className="shrink-0" />
-                                        <span className="truncate">Task Name</span>
+                                        <TaskDetailDialog>Task Name</TaskDetailDialog>
                                     </Td>
                                     <Td className="w-64">Description</Td>
                                     <Td className="w-64">Assignee</Td>
@@ -234,7 +235,7 @@ export default function Task() {
                                     <Tr>
                                         <Td className="flex items-center space-x-2 w-72">
                                             <Input type="checkbox" className="shrink-0" />
-                                            <span className="truncate">Task Name</span>
+                                            <TaskDetailDialog>Task Name</TaskDetailDialog>
                                         </Td>
                                         <Td className="w-64">Description</Td>
                                         <Td className="w-64">Assignee</Td>
@@ -247,7 +248,7 @@ export default function Task() {
                                     <Tr>
                                         <Td className="flex items-center space-x-2 w-72">
                                             <Input type="checkbox" className="shrink-0" />
-                                            <span className="truncate">Task Name</span>
+                                            <TaskDetailDialog>Task Name</TaskDetailDialog>
                                         </Td>
                                         <Td className="w-64">Description</Td>
                                         <Td className="w-64">Assignee</Td>
